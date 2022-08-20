@@ -1,0 +1,311 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>台风实时路径 | 实时台风路径 _ Sky4K | 天空4K</title>
+<meta name="author" content="Sky4K LLC" />
+<meta name="keywords" content="台风,台风网,台风路径实时发布系统,台风路径,实时路径,台风实时路径,浙江台风,浙江台风网,实时台风路径,浙江省台风路径,浙江省台风路径实时发布系统,实时台风路径系统,浙江省水利台风系统,水利厅台风系统,浙江省水利厅台风系统,最新台风信息,最新台风" />
+<meta name="description" content="台风路径实时发布系统是由浙江省水利厅、浙江省水利信息管理中心主办的台风信息发布系统,系统提供最新最全的台风信息和台风路径,可及时准确地提供台风的实时信息、预报信息和历史信息,系统同时整合卫星云图、降雨等内容" />
+<meta name="language" content="Chinese">
+<meta name="robots" content="index,follow" />
+<meta name="revisit-after" content="1 days">
+<link rel="preconnect" href="//www.google-analytics.com">
+<link rel="dns-prefetch" href="//www.google-analytics.com">
+<link rel="preconnect" href="//www.googletagmanager.com">
+<link rel="dns-prefetch" href="//www.googletagmanager.com">
+<link rel="preconnect" href="//pagead2.googlesyndication.com">
+<link rel="dns-prefetch" href="//pagead2.googlesyndication.com">
+<link rel="icon" href="//sky4k.top/favicon.ico" sizes="any">
+<link rel="apple-touch-icon" href="//img.sky4k.top/SITE/apple-touch-icon.png" />
+<link rel="icon" type="image/png" sizes="192x192" href="//img.sky4k.top/SITE/android-chrome-192x192.png">
+<link rel="icon" type="image/png" sizes="512x512" href="//img.sky4k.top/SITE/android-chrome-512x512.png">
+<link rel="icon" type="image/png" sizes="16x16" href="//img.sky4k.top/SITE/favicon-16x16.png">
+<link rel="icon" type="image/png" sizes="32x32" href="//img.sky4k.top/SITE/favicon-32x32.png">
+<link rel="manifest" href="//sky4k.top/site.webmanifest">
+
+<style>
+body,dd,dl,fieldset,form,h1,h2,h3,h4,h5,h6,input,legend,li,ol,p,select,td,textarea,th,ul{margin:0;padding:0; box-sizing: border-box;}
+img{border:0;vertical-align:top}
+li{list-style:none}
+iframe{border:none}
+html{height:100%;font-size:16px}
+body{height:100%;font:400 1em/1.8 'Microsoft Yahei','PingFang SC',Avenir,'Segoe UI','Hiragino Sans GB',STHeiti,'Microsoft Sans Serif','WenQuanYi Micro Hei',sans-serif}
+a{color:#333;text-decoration:none}
+:hover{transform:all linear .3s;   -moz-transition:all linear .3s; -o-transition:all linear .3s; -webkit-transition:all linear .3s;}
+div,li,a,img{transform:all linear .3s;   -moz-transition:all linear .3s; -o-transition:all linear .3s; -webkit-transition:all linear .3s;}
+.cf:after,.cf:before{content:" ";display:table}
+.cf:after,.clearfix:after{clear:both}
+.fl{float:left}
+.fr{float:right}
+.dis{display:block}
+.undis{display:none}
+*, *::before, *::after{box-sizing:inherit}
+.skin{  margin-bottom: 40px; background:#E3E3E3; position: relative; min-height:
+.layout{margin:0px 45px; padding: 0 0px;} 600px;}
+	.nopic .skin{min-height: 230px;}
+	.nopic .topbgpic,.nopic .topbg,.nopic .topxxbox .jmlogo,.nopic .topxxbox .jmkw,.nopic .topxxbox .jminto,.nopic .topxxbox .jmkan,.nopic .topxxbox .jmlasttime{ display: none;}
+	.topbg{ width: 100%; height: 100%; position: absolute; top: 0px; left: 0px;z-index: 2; }
+	.topbgm{ width: 100%; height: 100%; position: absolute; top: 0px; left: 0px;z-index: 2; display: none;}
+	.topbgtop{ width: 100%; height: 80px; position: absolute; top: 0px; left: 0px;z-index: 2; }
+	.topbgimg{ position: absolute; right: 0px; top: 0px; z-index: 1;}
+	.topbgpic img{ height: 600px;}
+	.top{ height: 80px; padding: 0 45px;}
+	.c_main{ margin-top: 30px;}
+	.ss{ margin-right: 150px; margin-top: 20px;width:400px; height:40px;}
+	.search .sstext{ color:#343434; background: rgba(255,255,255,0.2);width: 308px; height: 40px; border: 0px; outline: medium none; padding-left: 15px; border-radius: 20px 0 0 20px;  float: left;}
+	.search .submit{ line-height: 40px; border: none; margin-left: -21px; background: #0071ff;  width: 90px; text-align: center; height: 40px; overflow: hidden; font-size: 18px; color: #fff; cursor: pointer; border-radius: 20px 20px 20px 3px; float: left; margin-left: -20px;}
+	.fd .search .sstext{ background: rgba(0,0,0,0.1)}
+	.topbox{ /*background-image: linear-gradient(135deg, rgb(36, 75, 179) 0%, rgb(101, 177, 191) 50%, #00EAE4 100%);*/ padding:0; position: absolute; top: 0px; left: 0px; z-index: 100; width: 100%!important; height: 80px;  }
+	.topbox.layout{ margin: 0px;}
+	.fd{ z-index: 9999;}
+	.nopic .fd.topbox,.fd.topbox{ background: rgba(255,255,255,0.95); box-shadow: 0 10px 50px rgba(0,0,0,0.3); }
+	.nopic .topbox{background-image: linear-gradient(135deg, rgb(36, 75, 179) 0%, rgb(101, 177, 191) 50%, #00EAE4 100%);}
+	.logo{ width: 140px; margin: 25px 0 0 0; background: url(https://i.ibb.co/F6BhFQB/BANNER.png) no-repeat; background-size: 140px auto; height: 33px;}
+	.logo a,.lmlogo a{ display: block; width: 100%; height: 100%;}
+	.lmlogo{ margin: 21px 0 0 14px; background: url(https://i.ibb.co/F6BhFQB/BANNER.png) no-repeat; background-size: auto 32px; height: 34px; width:140px;}
+	.fd .logo{background: url(https://i.ibb.co/F6BhFQB/BANNER.png) no-repeat;background-size: 110px auto;}
+	.fd .lmlogo{background: url(https://i.ibb.co/F6BhFQB/BANNER.png) no-repeat;background-size: auto 32px;}
+	.qmt{ width: 180px;margin: 27px 0;}
+	.qmtlist{ width: 28px; position: relative;}
+	.wb,.sph{ margin-right: 20px;}
+	.qmticon .iconfont{ font-size: 28px; color: #fff; line-height: 26px;}
+	.fd .qmticon .iconfont{ color: #5E6573;}
+	.qmticon .iconfont:hover{ color: #0071ff;}
+	.wxqr{ position: absolute; z-index: 999; padding-top: 10px; right: 0px; display: none}
+	.qmtlist:hover .wxqr{ display: block;}
+	.icon-shipin{ font-size: 28px; line-height: 35px; color: #0071ff; margin-left: 3px;}
+	.nav_new{ margin-left: 40px; display: none;}
+	.nav_new li{ float: left; font-size: 16px; line-height: 80px; margin-right: 25px; font-weight: bold;}
+	.nav_new li a{color:#fff}
+	.fd .nav_new{ display: block;}
+	.fd .nav_new li a{ color: #5E6573;}
+	.topxx{width:auto; height: auto; display: flex; position: absolute; align-items:center; padding: 0 45px 0 45px; z-index: 10; top: 0; bottom: 0;}
+	.nopic .topxx{ align-items: flex-end;}
+	.topxxbox{ max-width: 600px; box-sizing: content-box; color: #fff;}
+	.nopic .topxxbox{color: #363636; max-width: 100%;}
+	.topxxbox .jmlogo img{ max-width: 300px; max-height: 150px;}
+	.topxxbox .jmname{ font-size: 46px; font-weight: bold; line-height: 50px; padding: 0px; max-height: 100px;text-overflow:ellipsis;display:-webkit-box; -webkit-box-orient:vertical;-webkit-line-clamp:2; overflow: hidden;}
+	.nopic .topxxbox .jmname{max-height: 50px; line-height: 50px; padding: 0px; text-overflow:ellipsis;display:-webkit-box; -webkit-box-orient:vertical;-webkit-line-clamp:1; overflow: hidden; margin-bottom: 30px;}
+	.topxxbox .jmkw{ font-weight: bold; font-size: 22px; margin: 10px 0px; line-height: 30px; max-height: 60px; text-overflow:ellipsis;display:-webkit-box; -webkit-box-orient:vertical;-webkit-line-clamp:2; overflow: hidden;}
+	.topxxbox .jminto{ font-size: 16px; line-height: 24px; max-height: 72px;text-overflow:ellipsis;display:-webkit-box; -webkit-box-orient:vertical;-webkit-line-clamp:2; overflow: hidden;}
+	.topxxbox .jmkan{ margin-top: 30px;}
+	.topxxbox .jmkan a{ font-size: 18px; color: #343434; font-weight: bold;padding: 14px 80px; background: #00EAE4; border-radius:40px 40px 40px 40px;}
+	.topxxbox .jmlasttime{ font-size: 12px; margin-top: 16px; color: #DDDDDD}
+	
+	.biaotimini{ font-size: 30px; font-weight: bold; margin-top: 10px; margin-bottom: 30px; color: #333;}
+	.listimg{position: relative}
+	.listimg .big_v_icon{ position: absolute; left: 106px; top: 56px;}
+	.shichang{ position: absolute; font-size: 14px; color: #fff; background:#0071ff; padding: 0 5px; left: 5px; top: 5px;}
+	.v_list_sx .v_bt{ font-weight: bold;text-overflow:ellipsis;display:-webkit-box; -webkit-box-orient:vertical;-webkit-line-clamp:2; }
+.shipinbox{ margin: 0 -12px}	
+.v_list{  display: -webkit-flex;display: flex; flex-wrap: wrap;  margin: 0 0px 40px;width: 100%;}
+.v_list li{padding: 0 12px; flex: 0 0 16.666666667%;  margin-bottom: 45px; overflow: hidden; display: block;}
+.v_list li a{ width: 100%; display: block; overflow: hidden;}
+.v_list li img{ width: 100%; border-radius: 3px; height: auto; background: #E9E9E9;}
+.v_list .list_img{ display:block; width: 100%; height: 0px; padding-bottom: 56.25%; position: relative;background: #E9E9E9;}
+.v_list .list_img_bg{ width: 100%; height: 100%; position: absolute;border-radius: 3px; left: 0; top: 0; background:linear-gradient(345deg,rgba(0,0,0,0.4),transparent 42%); z-index: 4;}
+.v_list .list_img_sc{ position: absolute; font-size: 13px; color: #fff; right: 10px; bottom: 10px; z-index: 5; line-height: 14px; font-weight: bold;}
+.v_list .list_img_lx{ position: absolute; font-size: 14px; padding: 0px 8px; top:5px; line-height: 24px; left: 5px; color: #fff; border-radius: 12px 12px 12px 0;z-index: 5;  background: #0071ff; }
+.v_list li .tags{ position: absolute; font-size: 13px; color: #343434; right: 5px; top: 5px; padding: 4px 5px; line-height: 14px; background: #00EAE4; border-radius: 3px;}
+.v_list .list_bt{ font-size: 22px; line-height: 30px; margin-top: 15px; color: #000; font-weight: 400px; max-height: 60px; overflow: hidden;}
+.v_list .list_bt_x{font-size: 15px; line-height: 20px; max-height: 40px; color: #6B7790;text-overflow:ellipsis;display:-webkit-box; -webkit-box-orient:vertical;-webkit-line-clamp:2; overflow: hidden;}
+.v_list li:hover .list_bt{ color: #0071ff;}
+
+.v_list li:hover img{box-shadow: 5px 5px 30px rgba(0,0,0,0.3);}
+.v_list .bx-prev,.list .bx-next{ top:50%; /*margin-top: calc((50% * (9 / 16) / 6) - (24px / 6)); */transform: translateY(-50%) translateX(0%);}
+.v_list .list_bt_c{ font-size: 18px; line-height: 25px;margin-top: 15px; max-height: 75px;text-overflow:ellipsis;display:-webkit-box; -webkit-box-orient:vertical;-webkit-line-clamp:3; overflow: hidden; }
+.news .v_list .list_bt_c{font-weight: bold}
+.news .v_list .list_img{padding-bottom: 71.428%;}
+.v_list li .newstags{ position: absolute;  color: #343434; right: 5px; top: 0px;   }
+.v_list li .newstags i{ font-size: 20px;background: #00EAE4;border-radius: 5px 10px 5px 5px;}
+.v_list li:hover .list_bt_c{ color: #0071ff;}
+	.v_list .layui-flow-more{ width: 100%; font-size: 18px; background: #fff; margin: 0px;}
+	.v_list .layui-flow-more a{ height: 50px; line-height: 50px;}
+	.v_list .layui-flow-more a cite{ padding: 0 30px; background-color: #fff; color: #555; border: 3px solid #666; border-radius: 0px; font-weight: bold;}
+	.v_list .layui-flow-more i{ display: none;}
+	.v_list .layui-flow-more a cite:hover{ color: #000; background: #00EAE4;border: 3px solid #00EAE4;}
+
+	.yqlj .v_list .list_img{ display: none;}
+	.yqlj .v_list .list_bt{ background: #F3F3F3; text-align: center; padding: 20px 12px; max-height: none; margin-top: 0;}
+	
+	.jmd iframe{ width:100%;margin:0 0 1em;border:0;}
+	.jmd iframe #tags li{ font-size: 50px!important;}
+	
+.footer{background: #EBEDF2; width: 100%; padding: 20px 0 ; display: inline-block; font-size: 16px; color:#868d9b; margin-top: 40px; margin-bottom: 0px;}
+.footer p{ line-height: 30px;}
+.footer a{ color:#868d9b;}
+.footer a:hover{ color:#0071ff;}
+.footer_l{ width:50%;}
+.footer_r p{text-align: right; font-weight: bold; color: #1F1F1F;}
+	
+	.typhoon{ height: 700px}
+@media screen and (max-width:1600px) {
+		.ss{ margin-left: 70px; width: 250px; margin-right: 70px}
+		.search .sstext{ width: 150px;}
+        .v_list li{flex: 0 0 20%; }
+	    .skin{  min-height: 540px;}
+	    .topbgpic img{ height: 540px;}
+	}
+@media screen and (max-width:1280px) {
+        .v_list li{flex: 0 0 25%; }
+	    .skin{  min-height: 450px;}
+	    .topbgpic img{ height: 450px;}
+	.topxxbox{ max-width: 500px}
+	.topxxbox .jmlogo img{ max-width: 250px; max-height: 120px;}
+	.topxxbox .jmname{ font-size: 36px;line-height: 38px; max-height: 76px;}
+	.topxxbox .jmkw{font-size: 18px; margin: 8px 0px; line-height: 20px; max-height: 40px; }
+	.topxxbox .jminto{ font-size: 14px; line-height: 18px; max-height: 36px;-webkit-line-clamp:2; }
+	}
+@media screen and (max-width:1024px) {
+        .v_list li{flex: 0 0 33.3333333%; }
+	    .skin{  min-height: 400px;}
+	    .topbgpic img{ height: 400px;}
+	.topxxbox .jmname{ font-size: 30px;line-height: 30px; max-height: 60px;}
+	.footer_l{ width: 100%; font-size: 12px; text-align: center;}
+	.footer_r.fr{ float: left;}
+	.footer_r{ width: 100%;}
+	.footer_r p{ font-size: 12px; text-align: center; }
+	.footer p{ line-height: 20px}
+	}
+@media screen and (max-width:768px) {
+	.qmt,.topxxbox .jmkan,.topbg{ display: none;}
+	.shipinbox{ margin: 0 -5px}
+	.v_list{ margin: 0 0px 40px; }
+    .v_list li{flex: 0 0 50%; padding: 0 5px; }
+	.skin{ overflow: hidden; padding-top: 80vw; margin-bottom: 20px; }
+	.nopic .skin{ min-height: 130px; padding-top: 0;}
+	.topbgimg{ right:50%;top:0px; transform: translateX(50%); }
+	.topbgpic img{height: 65%;}
+	.topxxbox{ max-width: 100%;}
+	.topxxbox .jmlogo img{ max-width: 220px; max-height: 90px;}
+	.topxxbox .jmname{ font-size: 32px;line-height: 32px; max-height: 64px; padding: 0px 0 8px 0;}
+	.nopic .topxxbox .jmname{ padding-bottom:0px; margin-bottom: 0px; max-height: 65px;-webkit-line-clamp:2; line-height: 33px; font-size: 26px; }
+	.topxxbox .jmkw{font-size: 16px; margin: 6px 0px; line-height: 20px; max-height: 40px; }
+	.topxxbox .jminto{ font-size: 14px; line-height: 18px; color:#E8E8E8}
+	.layout{ margin: 0 10px;}
+	.top{ height: 50px; padding: 0 10px;}
+	.topbgm{ display: block}
+	.nopic .topbgm,.nopic .topbgtop{ display: none;}
+	.logo{ width: 84px; margin: 15px 0 0 0; background-size: 84px auto; height: 21px;}
+	.lmlogo{ margin: 11px 0 0 14px; background: url() no-repeat; background-size: auto 26px; height: 26px; width:110px;}
+	.fd .logo{background: url() no-repeat;background-size: 84px auto;}
+	.fd .lmlogo{background: url() no-repeat;background-size: auto 26px;}
+	.topbox{height: 50px;}
+	.topxx{ align-items: flex-end; padding: 0 15px 0 15px; margin-bottom: 20px;}
+	.biaotimini{ font-size: 28px; margin-bottom: 15px}
+	.v_list li{ margin-bottom: 30px}
+	.v_list .list_bt{ font-size: 18px; line-height: 30px; margin-top: 8px; max-height: 60px;}
+	.v_list .list_bt_x{ font-size: 14px; line-height: 18px; max-height: 36px;}
+	.v_list .list_bt_c{ font-size: 16px; line-height: 22px;max-height: 66px;}
+	.typhoon{ height: 550px}
+	.footer{ margin-top: 10px;}
+	}
+</style>
+
+
+</head>
+
+<body>
+<section class="nopic">
+	<div class="topbox layout"  id="topbox">
+	<div class="top">
+	  <div class="logo fl"><a href="/" ></a></div>
+		
+	 
+	  
+	</div>
+	</div><!--顶部logo搜索结束-->
+<div class="w skin">
+	<div class="topxx">
+	   <div class="topxxbox">
+		   <p class="jmname">台风实时路径</p>
+		</div>
+	</div>
+</div><!--头部结束-->
+<p>台风路径实时发布系统是由浙江省水利厅、浙江省水利信息管理中心主办的台风信息发布系统,系统提供最新最全的台风信息和台风路径,可及时准确地提供台风的实时信息、预报信息和历史信息,系统同时整合卫星云图、降雨等内容</p><br>
+<div class="layout shipin jmd">
+	<!--<div class="biaotimini fl">友情链接</div>-->
+	<iframe src="https://typhoon.slt.zj.gov.cn/default.aspx" name="myiframe" id="myiframe" class="typhoon" frameborder="0" scrolling="no"></iframe>
+</div>
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6119901489929327" crossorigin="anonymous" type="cddb582aa9f9f679c50b5fa5-text/javascript"></script>
+
+<ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-6119901489929327" data-ad-slot="4759064559" data-ad-format="auto" data-full-width-responsive="true"></ins>
+<script type="cddb582aa9f9f679c50b5fa5-text/javascript">
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+<div class="layout shipin jmd">
+	<!--<div class="biaotimini fl">友情链接</div>-->
+	<iframe src="https://tf.istrongcloud.com/" name="myiframe" id="myiframe" class="typhoon" frameborder="0" scrolling="no"></iframe>
+</div>	
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6119901489929327" crossorigin="anonymous" type="cddb582aa9f9f679c50b5fa5-text/javascript"></script>
+
+<ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-6119901489929327" data-ad-slot="4759064559" data-ad-format="auto" data-full-width-responsive="true"></ins>
+<script type="cddb582aa9f9f679c50b5fa5-text/javascript">
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+<div class="layout shipin jmd">
+	<!--<div class="biaotimini fl">友情链接</div>-->
+	<iframe src="https://typhoon.weather.com.cn/gis/typhoon_m.shtml" name="myiframe" id="myiframe" class="typhoon" frameborder="0" scrolling="no"></iframe>
+</div>
+<!--<div class="layout shipin gywm">
+	<div class="biaotimini fl"></div>
+	<div class="shipinbox">
+	</div>
+</div>-->
+
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6119901489929327" crossorigin="anonymous" type="cddb582aa9f9f679c50b5fa5-text/javascript"></script>
+
+<ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-6119901489929327" data-ad-slot="4759064559" data-ad-format="auto" data-full-width-responsive="true"></ins>
+<script type="cddb582aa9f9f679c50b5fa5-text/javascript">
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6119901489929327" crossorigin="anonymous" type="cddb582aa9f9f679c50b5fa5-text/javascript"></script>
+
+<ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-6119901489929327" data-ad-slot="4759064559" data-ad-format="auto" data-full-width-responsive="true"></ins>
+<script type="cddb582aa9f9f679c50b5fa5-text/javascript">
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6119901489929327" crossorigin="anonymous" type="cddb582aa9f9f679c50b5fa5-text/javascript"></script>
+
+<ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-6119901489929327" data-ad-slot="4759064559" data-ad-format="auto" data-full-width-responsive="true"></ins>
+<script type="cddb582aa9f9f679c50b5fa5-text/javascript">
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+<div class="footer">
+<div class="layout">
+	<div class="footer_l fl">
+	  <p class="about"><a>关于我们/联系我们</a> <a>友情链接</a></p>
+	  <p class="icp"><a>浙公网安备33010602004649号</a> <a>浙ICP备11016796号-2</a></p>
+	</div>
+	<div class="footer_r fr">
+	 <p>©<span id="currentFullYear"></span> Sky4K</p>
+	<script type="text/javascript">
+  var currentFullYear = (new Date()).getFullYear();
+  document.getElementById('currentFullYear').innerHTML = currentFullYear;
+</script>
+	</div>
+</div>	
+</div>
+</section>
+
+
+	
+<script>
+
+layui.use('flow', function(){
+  var $ = layui.jquery; //不用额外加载jQuery，flow模块本身是有依赖jQuery的，直接用即可。
+  var flow = layui.flow;
+  flow.lazyimg(); 
+
+});		
+var Sticky = new hcSticky('#topbox', {
+	      stickTo: 'section',
+          stickyClass:'fd'
+	    });
+	  </script>
+
+
+</body>
+</html>
+
