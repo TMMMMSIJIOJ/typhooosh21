@@ -10,12 +10,6 @@
 <meta name="language" content="Chinese">
 <meta name="robots" content="index,follow" />
 <meta name="revisit-after" content="1 days">
-<link rel="preconnect" href="//www.google-analytics.com">
-<link rel="dns-prefetch" href="//www.google-analytics.com">
-<link rel="preconnect" href="//www.googletagmanager.com">
-<link rel="dns-prefetch" href="//www.googletagmanager.com">
-<link rel="preconnect" href="//pagead2.googlesyndication.com">
-<link rel="dns-prefetch" href="//pagead2.googlesyndication.com">
 <link rel="icon" href="//sky4k.top/favicon.ico" sizes="any">
 <link rel="apple-touch-icon" href="//img.sky4k.top/SITE/apple-touch-icon.png" />
 <link rel="icon" type="image/png" sizes="192x192" href="//img.sky4k.top/SITE/android-chrome-192x192.png">
@@ -23,7 +17,28 @@
 <link rel="icon" type="image/png" sizes="16x16" href="//img.sky4k.top/SITE/favicon-16x16.png">
 <link rel="icon" type="image/png" sizes="32x32" href="//img.sky4k.top/SITE/favicon-32x32.png">
 <link rel="manifest" href="//sky4k.top/site.webmanifest">
-
+<style type='text/css'>  
+/* Animation */  
+@keyframes fadeInDown{0%{opacity:0;transform:translateY(-20px)}100%{opacity:1;transform:translateY(0)}}  
+@keyframes rubberBand{from{transform:scale3d(1,1,1)}30%{transform:scale3d(1.25,0.75,1)}40%{transform:scale3d(0.75,1.25,1)}50%{transform:scale3d(1.15,0.85,1)}65%{transform:scale3d(.95,1.05,1)}75%{transform:scale3d(1.05,.95,1)}to{transform:scale3d(1,1,1)}}  
+/* Say Hi to Adblock */  
+#arlinablock{background:rgba(0,0,0,0.65);position:fixed;margin:auto;left:0;right:0;top:0;bottom:0;overflow:auto;z-index:999999;animation:fadeInDown 1s}  
+#arlinablock .header{margin:0 0 15px 0}  
+#arlinablock .inner{background:red;color:#fff;box-shadow:0 10px 20px rgba(0,0,0,0.1);text-align:center;width:600px;padding:40px;border-radius:5px;margin:7% auto 2% auto;animation:rubberBand 1s}  
+#arlinablock button{padding:10px 20px;border:0;background:rgba(0,0,0,0.15);color:#fff;margin:20px 5px;cursor:pointer;transition:all .3s}  
+#arlinablock button:hover{background:rgba(0,0,0,0.35);color:#fff;outline:none}  
+#arlinablock button.active,#arlinablock button:hover.active{background:#fff;color:#222;outline:none}  
+#arlinablock .fixblock{background:#fff;text-align:left;color:#000;padding:20px;height:250px;overflow:auto;line-height:30px}  
+#arlinablock .fixblock div{display:none}  
+#arlinablock .fixblock div.active{display:block}  
+#arlinablock ol{margin-left:20px}  
+@media(max-width:768px){#arlinablock .inner{width:calc(100% - 20px);margin:10px auto;padding:15px}}  
+</style>  
+<script> 
+!function(){function f(){var a=document.createElement("div");a.id="arlinablock";a.innerHTML='<div class="inner"> <div class="header"> <h2>《Ad Blocker Detected》</h2> </div> <div class="isi"> <p>Please Consider Supporting Us By Disabling Your Ad Blocker. Thank You.</p> <div class="tombol"><button class="1 active">Adblock</button></div> <div class="fixblock"> <div class="1 active"> <ol> <li>Open The AdBlock App That You Using.<br><img src=""></li> <li>Then,Choose Turn Off AdBlock.<br><img src=""></li> <li>Once You Had Turn Off, Exit The Sky4K And Try Again.<br><img src=""></li></ol> </div></div>Made With ❤️ By Sky4K | 天空4K - 2014 ~ 2023 </div> </div>'; 
+document.body.append(a);document.body.style.overflow="hidden";var b=a.querySelectorAll("button");a.querySelector(".close");var d=a.querySelectorAll(".fixblock > div");for(a=0;a<b.length;a++)b[a].addEventListener("click",function(a){a.preventDefault();a=this.getAttribute("class").split(" ")[0];for(var c=0;c<d.length;c++)d[c].classList.remove("active"),b[c].classList.remove("active");b[a-1].classList.add("active");d[a-1].classList.add("active")})}var b=document.createElement("script");b.type="text/javascript"; 
+b.async=!0;b.src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js";b.onerror=function(){f();window.adblock=!0};var e=document.getElementsByTagName("script")[0];e.parentNode.insertBefore(b,e)}(); 
+</script>
 <style>
 body,dd,dl,fieldset,form,h1,h2,h3,h4,h5,h6,input,legend,li,ol,p,select,td,textarea,th,ul{margin:0;padding:0; box-sizing: border-box;}
 img{border:0;vertical-align:top}
@@ -228,20 +243,32 @@ div,li,a,img{transform:all linear .3s;   -moz-transition:all linear .3s; -o-tran
 	<!--<div class="biaotimini fl">友情链接</div>-->
 	<iframe src="https://typhoon.slt.zj.gov.cn/default.aspx" name="myiframe" id="myiframe" class="typhoon" frameborder="0" scrolling="no"></iframe>
 </div>
-<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6119901489929327" crossorigin="anonymous" type="cddb582aa9f9f679c50b5fa5-text/javascript"></script>
-
-<ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-6119901489929327" data-ad-slot="4759064559" data-ad-format="auto" data-full-width-responsive="true"></ins>
-<script type="cddb582aa9f9f679c50b5fa5-text/javascript">
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6119901489929327"
+     crossorigin="anonymous"></script>
+<!-- NEW UI SKY4K -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-6119901489929327"
+     data-ad-slot="4759064559"
+     data-ad-format="auto"
+     data-full-width-responsive="true"></ins>
+<script>
      (adsbygoogle = window.adsbygoogle || []).push({});
 </script>
 <div class="layout shipin jmd">
 	<!--<div class="biaotimini fl">友情链接</div>-->
 	<iframe src="https://tf.istrongcloud.com/" name="myiframe" id="myiframe" class="typhoon" frameborder="0" scrolling="no"></iframe>
 </div>	
-<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6119901489929327" crossorigin="anonymous" type="cddb582aa9f9f679c50b5fa5-text/javascript"></script>
-
-<ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-6119901489929327" data-ad-slot="4759064559" data-ad-format="auto" data-full-width-responsive="true"></ins>
-<script type="cddb582aa9f9f679c50b5fa5-text/javascript">
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6119901489929327"
+     crossorigin="anonymous"></script>
+<!-- NEW UI SKY4K -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-6119901489929327"
+     data-ad-slot="4759064559"
+     data-ad-format="auto"
+     data-full-width-responsive="true"></ins>
+<script>
      (adsbygoogle = window.adsbygoogle || []).push({});
 </script>
 <div class="layout shipin jmd">
@@ -253,23 +280,946 @@ div,li,a,img{transform:all linear .3s;   -moz-transition:all linear .3s; -o-tran
 	<div class="shipinbox">
 	</div>
 </div>-->
-
-<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6119901489929327" crossorigin="anonymous" type="cddb582aa9f9f679c50b5fa5-text/javascript"></script>
-
-<ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-6119901489929327" data-ad-slot="4759064559" data-ad-format="auto" data-full-width-responsive="true"></ins>
-<script type="cddb582aa9f9f679c50b5fa5-text/javascript">
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6119901489929327"
+     crossorigin="anonymous"></script>
+<!-- NEW UI SKY4K -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-6119901489929327"
+     data-ad-slot="4759064559"
+     data-ad-format="auto"
+     data-full-width-responsive="true"></ins>
+<script>
      (adsbygoogle = window.adsbygoogle || []).push({});
 </script>
-<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6119901489929327" crossorigin="anonymous" type="cddb582aa9f9f679c50b5fa5-text/javascript"></script>
-
-<ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-6119901489929327" data-ad-slot="4759064559" data-ad-format="auto" data-full-width-responsive="true"></ins>
-<script type="cddb582aa9f9f679c50b5fa5-text/javascript">
+<div class="layout shipin jmd">
+<h1 id="firstHeading" class="firstHeading mw-first-heading" dir="ltr" style="margin: 0px 0px 0.25em;padding: 0px;overflow: visible;border-bottom-width: 1px;border-bottom-style: solid;font-size: 1.8em;font-weight: normal;font-family: &#39;Linux Libertine&#39;, Georgia, Times, serif;line-height: 1.3;white-space: normal;border-bottom-color: rgb(162, 169, 177) !important">
+    台风知识小课堂 <span style="color: #202122; font-family: sans-serif; font-size: 12.8px; background-color: #FFFFFF;">By 维基百科，自由的百科全书</span>
+</h1>
+<p>
+    <br/>
+</p>
+<p style="margin-top: 0.5em;margin-bottom: 0.5em;color: rgb(32, 33, 34);font-family: sans-serif;font-size: 15.008px;white-space: normal;background-color: rgb(255, 255, 255)">
+    <strong>台风</strong>（英语：typhoon，香港天文台缩写<strong>T.</strong>）属于热带气旋的一种。热带气旋是发生在热带或副热带洋面上的低压涡旋，是赤道以北，国际换日线以西，亚太国家或地区对热带气旋的分级。在气象学上，按世界气象组织定义，热带气旋中心持续风速达到12级（即64节或以上、32.7m/s或以上，又或者118km/hr或以上）称为<strong>飓风</strong>（hurricane）或其他在地近义字<sup id="cite_ref-1" style="line-height: 1;unicode-bidi: isolate;white-space: nowrap">[1]</sup>。西北太平洋地区采用之近义字乃台风。世界气象组织及日本气象厅均以此为热带气旋的最高级别，但部分气象部门会按需要而设立更高级别，如中国国家气象中心丶澳门气象局及香港天文台之强台风、超强台风，中华民国中央气象局之强烈台风，以及美国联合台风警报中心的超级台风。
+</p>
+<p style="margin-top: 0.5em;margin-bottom: 0.5em;color: rgb(32, 33, 34);font-family: sans-serif;font-size: 15.008px;white-space: normal;background-color: rgb(255, 255, 255)">
+    广义上，“台风”这个词并非一种热带气旋强度。在台湾、日本等地，将中心持续风速每秒17.2米或以上的热带气旋（包括世界气象组织定义中的热带风暴、强烈热带风暴和台风）均称台风。在非正式场合，“台风”甚至直接泛指热带气旋本身。当西北太平洋的热带气旋达到热带风暴的强度，区域专责气象中心（RSMC）日本气象厅会对其编号及命名，名称由世界气象组织台风委员会的14个国家和地区提供。
+</p>
+<p style="margin-top: 0.5em;margin-bottom: 0.5em;color: rgb(32, 33, 34);font-family: sans-serif;font-size: 15.008px;white-space: normal;background-color: rgb(255, 255, 255)">
+    但在不同海洋上也各自有地区性的名称，例如北太平洋西部称为“台风”、北大西洋称为“飓风”、北印度洋称为“气旋风暴”。
+</p>
+<p style="margin-top: 0.5em;margin-bottom: 0.5em;color: rgb(32, 33, 34);font-family: sans-serif;font-size: 15.008px;white-space: normal;background-color: rgb(255, 255, 255)">
+    据美国海军的联合台风警报中心统计，1959年至2004年间西北太平洋及南中国海海域的台风发生的个数与月份，平均每年有26.5个台风生成，出现最多台风的月份是8月，其次是7月和9月。
+</p>
+<p>
+    <br/>
+</p>
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6119901489929327"
+     crossorigin="anonymous"></script>
+<!-- NEW UI SKY4K -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-6119901489929327"
+     data-ad-slot="4759064559"
+     data-ad-format="auto"
+     data-full-width-responsive="true"></ins>
+<script>
      (adsbygoogle = window.adsbygoogle || []).push({});
 </script>
-<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6119901489929327" crossorigin="anonymous" type="cddb582aa9f9f679c50b5fa5-text/javascript"></script>
-
-<ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-6119901489929327" data-ad-slot="4759064559" data-ad-format="auto" data-full-width-responsive="true"></ins>
-<script type="cddb582aa9f9f679c50b5fa5-text/javascript">
+<h2 style="margin: 1em 0px 0.25em;padding: 0px;overflow: hidden;border-bottom: 1px solid rgb(162, 169, 177);font-weight: normal;font-family: &#39;Linux Libertine&#39;, Georgia, Times, serif;line-height: 1.3;white-space: normal;background-color: rgb(255, 255, 255)">
+    <span id="名称由来">名称由来</span>
+</h2>
+<p style="margin-top: 0.5em;margin-bottom: 0.5em;color: rgb(32, 33, 34);font-family: sans-serif;font-size: 15.008px;white-space: normal;background-color: rgb(255, 255, 255)">
+    希腊神话其中名为泰风（Τυφῶν，又译为堤丰或堤福俄斯）的泰坦，是象征风暴的邪恶巨人。该词在希腊语中义为“暴风”或“冒烟者”。堤丰也象征恶风。《神谱》说它战败后，从身上生出无数股狂台，专门滋害往来的海船。特指印度洋的风暴。
+</p>
+<p style="margin-top: 0.5em;margin-bottom: 0.5em;color: rgb(32, 33, 34);font-family: sans-serif;font-size: 15.008px;white-space: normal;background-color: rgb(255, 255, 255)">
+    又有说该词源于粤语“大风”者，因为粤语中“大风”发音为“daai6 fung1”，该词汇经波斯语、阿拉伯语、葡萄牙语，最终传至英语成typhoon，而荷兰语则是Tyfoon。
+</p>
+<p style="margin-top: 0.5em;margin-bottom: 0.5em;color: rgb(32, 33, 34);font-family: sans-serif;font-size: 15.008px;white-space: normal;background-color: rgb(255, 255, 255)">
+    但据清王士禛《香祖笔记》，“台湾风信与他海殊异，风大而烈者为飓，又甚者为颱。飓倏发倏止，颱常连日夜不止。正、二、三、四月发者为飓，五、六、七、八月发者为颱。”可见今日的“台风”一词，源出彼时的“颱”字。仅此一字，不太可能是音译typhoon成“台风”；或源自台语“风台”，有人认为来自台湾的“台”，也有人认为源自阿拉伯语。迄无定论。日文中台风写作“台风”，应该是中文的影响。<sup id="cite_ref-2" style="line-height: 1;unicode-bidi: isolate;white-space: nowrap">[2]</sup>
+</p>
+<p style="margin-top: 0.5em;margin-bottom: 0.5em;color: rgb(32, 33, 34);font-family: sans-serif;font-size: 15.008px;white-space: normal;background-color: rgb(255, 255, 255)">
+    较强的热带气旋中，发生于北太平洋西部及南中国海者称为“台风（Typhoon）”；于大西洋西部、加勒比海、墨西哥湾和北太平洋东部者称为“飓风（Hurricane）”；在印度洋上则可简称为“气旋（Cyclone）”。
+</p>
+<p>
+    <br/>
+</p>
+<h2 style="margin: 1em 0px 0.25em; padding: 0px; overflow: hidden; border-bottom: 1px solid rgb(162, 169, 177); font-weight: normal; font-family: &quot;Linux Libertine&quot;, Georgia, Times, serif; line-height: 1.3; white-space: normal; background-color: rgb(255, 255, 255);">
+    <span class="mw-headline" id="生成">生成</span>
+</h2>
+<p style="margin-top: 0.5em; margin-bottom: 0.5em; color: rgb(32, 33, 34); font-family: sans-serif; font-size: 15.008px; white-space: normal; background-color: rgb(255, 255, 255);">
+    台风发源于热带海面，由于温度高，大量的海水被蒸发到了空中，形成一个低气压中心。随着气压的变化和地球自身的运动，流入的空气也旋转起来，形成一个逆时针旋转(位于北半球)的空气漩涡，这就是热带气旋，称为热带扰动。只要气温不下降，海水温度也足够高，这个热带气旋就会越来越强大，最后形成台风。
+</p>
+<h3 style="margin: 0.3em 0px 0px; padding-top: 0.5em; padding-bottom: 0px; overflow: hidden; font-size: 1.2em; line-height: 1.6; font-family: sans-serif; white-space: normal; background-color: rgb(255, 255, 255);">
+    <span id=".E7.94.9F.E6.88.90.E7.9A.84.E5.8A.A8.E5.8A.9B"></span><span class="mw-headline" id="生成的动力">生成的动力</span>
+</h3>
+<p style="margin-top: 0.5em; margin-bottom: 0.5em; color: rgb(32, 33, 34); font-family: sans-serif; font-size: 15.008px; white-space: normal; background-color: rgb(255, 255, 255);">
+    美国国家大气研究中心（英语：National Center for Atmospheric Research）的科学家估计一个热带气旋每天释放5×10<sup style="line-height: 1;">19</sup>至2×10<sup style="line-height: 1;">20</sup>焦耳的能量，比所有人类的发电机加起来高200倍，或等于每20分钟引爆一颗1000万吨的核弹。
+</p>
+<p style="margin-top: 0.5em; margin-bottom: 0.5em; color: rgb(32, 33, 34); font-family: sans-serif; font-size: 15.008px; white-space: normal; background-color: rgb(255, 255, 255);">
+    结构上来说，热带气旋是一个由云、风和雷暴组成的巨型的旋转系统，它的基本能量来源是在高空水汽冷凝时汽化热的释放。所以，热带气旋可以被视为由地球的自转和引力支持的一个巨型的热力发动机，另一方面，热带气旋也可被看成一种特别的中尺度对流复合体（英语：Mesoscale Convective Complex），不断在广阔的暖湿气流来源上发展。因为当水冷凝时有一小部分释放出来的能量被转化为动能，水的冷凝是热带气旋附近高风速的原因。高风速和其导致的低气压令蒸发增加，继而使更多的水汽冷凝。大部分释放出的能量驱动上升气流，使风暴云层的高度上升，进一步加快冷凝。
+</p>
+<p style="margin-top: 0.5em; margin-bottom: 0.5em; color: rgb(32, 33, 34); font-family: sans-serif; font-size: 15.008px; white-space: normal; background-color: rgb(255, 255, 255);">
+    热带气旋因此能够取得足够的能量自给自足，这是一个正回授的回圈，使得只要暖湿气流和较高的水温可以维持，越来越多的能量便会被热带气旋吸收。其他因素例如空气持续地不均衡分布也会给予热带气旋能量。地球的自转使热带气旋旋转并影响其路径，这就是科里奥利力的作用。综合以上叙述，使热带气旋形成的因素包括一个预先存在的天气扰动、高水温、湿润的空气和在高空中相对较低的风速。如果适合的环境持续，使热带气旋正反馈的机制借着大量的能量吸收被启动，热带气旋就可能形成。
+</p>
+<p style="margin-top: 0.5em; margin-bottom: 0.5em; color: rgb(32, 33, 34); font-family: sans-serif; font-size: 15.008px; white-space: normal; background-color: rgb(255, 255, 255);">
+    深层对流作为一种驱动力是热带气旋与其他气旋系统的主要分别，因为深层对流在热带气候地区中最强，所以热带气旋大多在热带地区生成。相对地，中纬度气旋的主要能量来源是大气中的已存在的水平温度梯度。如果热带气旋要维持强度，就必须留在温暖的海面上，使正反馈机制得以持续。因此，当热带气旋移入内陆，强度便会迅速减弱。
+</p>
+<p style="margin-top: 0.5em; margin-bottom: 0.5em; color: rgb(32, 33, 34); font-family: sans-serif; font-size: 15.008px; white-space: normal; background-color: rgb(255, 255, 255);">
+    当热带气旋经过一片海洋，该处海域的表面温度会下降，从而影响热带气旋后来的发展。温度的下降主要是因为热带气旋带来的大风使海水翻滚，海底较冷的海水涌上。较凉的雨水的下降、云层的遮蔽使海洋减少吸收太阳的辐射，也是表面海水温度下降的原因。以上因素相辅相成，会使一大片海洋的表面温度在几天内急剧下降。
+</p>
+<p>
+    <br/>
+</p>
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6119901489929327"
+     crossorigin="anonymous"></script>
+<!-- NEW UI SKY4K -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-6119901489929327"
+     data-ad-slot="4759064559"
+     data-ad-format="auto"
+     data-full-width-responsive="true"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+<h2 style="margin: 1em 0px 0.25em; padding: 0px; overflow: hidden; border-bottom: 1px solid rgb(162, 169, 177); font-weight: normal; font-family: &quot;Linux Libertine&quot;, Georgia, Times, serif; line-height: 1.3; white-space: normal; background-color: rgb(255, 255, 255);">
+    <span class="mw-headline" id="路徑">路径</span>
+</h2>
+<div class="thumb tright" style="clear: right; float: right; width: auto; background-color: rgb(255, 255, 255); margin: 0.5em 0px 1.3em 1.4em; color: rgb(32, 33, 34); font-family: sans-serif; font-size: 15.008px; white-space: normal;">
+    <div class="thumbinner" style="padding: 3px; text-align: center; overflow: hidden; border: 1px solid rgb(200, 204, 209); background-color: rgb(248, 249, 250); font-size: 14.1075px; width: 222px;">
+        <img alt="" src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/97/Pacific_typhoon_tracks_1980-2005.jpg/220px-Pacific_typhoon_tracks_1980-2005.jpg" decoding="async" width="220" height="169" class="thumbimage" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/9/97/Pacific_typhoon_tracks_1980-2005.jpg/330px-Pacific_typhoon_tracks_1980-2005.jpg 1.5x, //upload.wikimedia.org/wikipedia/commons/thumb/9/97/Pacific_typhoon_tracks_1980-2005.jpg/440px-Pacific_typhoon_tracks_1980-2005.jpg 2x" data-file-width="4700" data-file-height="3600" style="border: 1px solid rgb(200, 204, 209); vertical-align: middle;"/>
+        <div class="thumbcaption" style="text-align: left; line-height: 1.4em; padding: 3px; border: 0px; font-size: 13.2611px;">
+            <div class="magnify" style="float: right; margin-left: 3px; margin-right: 0px;"></div>由1980年至2005年期间生成的所有西北太平洋热带气旋路径图，右边的直线是国际日期变更线
+        </div>
+    </div>
+</div>
+<p style="margin-top: 0.5em; margin-bottom: 0.5em; color: rgb(32, 33, 34); font-family: sans-serif; font-size: 15.008px; white-space: normal; background-color: rgb(255, 255, 255);">
+    台风的主要生成地区为西北太平洋及南中国海。当中以南中国海生成的热带气旋数量较少。太平洋上的热带气旋基本上全年都会生成，而以七至十月次数最为频密。热带气旋生成的位置分布与季节有关，在冬、春季较为偏南，夏天和初秋较为偏北。
+</p>
+<p style="margin-top: 0.5em; margin-bottom: 0.5em; color: rgb(32, 33, 34); font-family: sans-serif; font-size: 15.008px; white-space: normal; background-color: rgb(255, 255, 255);">
+    热带气旋生成后的移动路径主要受副热带高气压（副高）外围气流影响，所以副高的位置和范围基本上决定了热带气旋的路径，其移动路径大约可分为：
+</p>
+<h3 style="margin: 0.3em 0px 0px; padding-top: 0.5em; padding-bottom: 0px; overflow: hidden; font-size: 1.2em; line-height: 1.6; font-family: sans-serif; white-space: normal; background-color: rgb(255, 255, 255);">
+    <span id=".E8.A5.BF.E9.80.B2.E5.9E.8B"></span><span class="mw-headline" id="西進型">西进型</span>
+</h3>
+<p style="margin-top: 0.5em; margin-bottom: 0.5em; color: rgb(32, 33, 34); font-family: sans-serif; font-size: 15.008px; white-space: normal; background-color: rgb(255, 255, 255);">
+    台风在菲律宾周遭海域形成后，向西移动，并渐渐稍为偏北。于不同纬度生成的热带气旋所经过的地区不一。纬度较低时会横过菲律宾后进入南中国海，最后在中国广东、广西、海南，或越南登陆。纬度较高时可以经过巴士海峡，影响台湾，然后在中国的广东、福建登陆。由于冬、春两季，副高位处较南，所以每年11月至5月的台风生成纬度较低，路径亦会偏南，一般只在北纬16度以南进入南中国海，最后在越南登陆，间中亦影响泰国，甚至进入孟加拉湾，例如2020年的热带风暴红霞。
+</p>
+<h3 style="margin: 0.3em 0px 0px; padding-top: 0.5em; padding-bottom: 0px; overflow: hidden; font-size: 1.2em; line-height: 1.6; font-family: sans-serif; white-space: normal; background-color: rgb(255, 255, 255);">
+    <span id=".E8.A5.BF.E5.8C.97.E5.9E.8B"></span><span class="mw-headline" id="西北型">西北型</span>
+</h3>
+<p style="margin-top: 0.5em; margin-bottom: 0.5em; color: rgb(32, 33, 34); font-family: sans-serif; font-size: 15.008px; white-space: normal; background-color: rgb(255, 255, 255);">
+    路径和西进型接近，但向北分量增加。西北型台风可以横过台湾岛或穿越巴士海峡、之后在中国大陆广东及福建沿岸登陆；亦可能经过琉球群岛，在中国大陆浙江、江苏一带沿海登陆。这种路径的台风多数出现于每年盛夏七至八月间，例如1996年的台风贺伯、2019年的超强台风利奇马。
+</p>
+<h3 style="margin: 0.3em 0px 0px; padding-top: 0.5em; padding-bottom: 0px; overflow: hidden; font-size: 1.2em; line-height: 1.6; font-family: sans-serif; white-space: normal; background-color: rgb(255, 255, 255);">
+    <span id=".E8.BD.89.E5.90.91.E5.9E.8B"></span><span class="mw-headline" id="轉向型">转向型</span>
+</h3>
+<p style="margin-top: 0.5em; margin-bottom: 0.5em; color: rgb(32, 33, 34); font-family: sans-serif; font-size: 15.008px; white-space: normal; background-color: rgb(255, 255, 255);">
+    热带气旋在菲律宾以东或关岛附近形成后，先向西北偏西移动，至北纬15至30度附近转向西北，最后转向北和东北，成一抛物线。在11月至5月，多数转向型热带气旋在东经130度以东的太平洋上转向北，较少登陆东亚陆地，主要影响太平洋上的岛屿。6月和10至11月的转向型热带气旋亦多数在海上转向。7至8月的热带气旋在较北、较西的地方转向，途径可以影响台湾海峡北部和东海沿岸地区，转向后可以影响朝鲜半岛和日本等地，例如2019年的台风米塔。
+</p>
+<h3 style="margin: 0.3em 0px 0px; padding-top: 0.5em; padding-bottom: 0px; overflow: hidden; font-size: 1.2em; line-height: 1.6; font-family: sans-serif; white-space: normal; background-color: rgb(255, 255, 255);">
+    <span id=".E8.BF.B7.E8.B5.B0.E5.9E.8B"></span><span class="mw-headline" id="迷走型">迷走型</span>
+</h3>
+<p style="margin-top: 0.5em; margin-bottom: 0.5em; color: rgb(32, 33, 34); font-family: sans-serif; font-size: 15.008px; white-space: normal; background-color: rgb(255, 255, 255);">
+    部分热带气旋因外围引导气流不明，或受其他天气系统影响（如藤原效应或季候风），路径出现打转、停滞等，明显的例子有:1986年的台风韦恩、1991年的台风耐特、2001年的台风纳莉、2018年热带风暴贝碧嘉的等等
+</p>
+<h2 style="margin: 1em 0px 0.25em;padding: 0px;overflow: hidden;border-bottom: 1px solid rgb(162, 169, 177);font-weight: normal;font-family: &#39;Linux Libertine&#39;, Georgia, Times, serif;line-height: 1.3;white-space: normal;background-color: rgb(255, 255, 255)">
+    <span id="命名及編號">命名及编号</span>
+</h2>
+<p style="margin-top: 0.5em;margin-bottom: 0.5em;color: rgb(32, 33, 34);font-family: sans-serif;font-size: 15.008px;white-space: normal;background-color: rgb(255, 255, 255)">
+    因为海洋上可能同时出现多个热带气旋。在西北太平洋，几乎每两年都会出现一次3个热带气旋同时出现的“三旋共舞”现象。最高纪录是1960年8月23日，贝丝、卡门、黛拉、埃琳、费依等5个台风同时出现而形成的“五旋共舞”<sup id="cite_ref-3" style="line-height: 1;unicode-bidi: isolate;white-space: nowrap">[3]</sup>。由于当时这5个台风构成了一个类似倒置的奥运五环的形状且当年举办了罗马奥运会，这个现象也被称为“五环台风”<sup id="cite_ref-4" style="line-height: 1;unicode-bidi: isolate;white-space: nowrap">[4]</sup>。
+</p>
+<p style="margin-top: 0.5em;margin-bottom: 0.5em;color: rgb(32, 33, 34);font-family: sans-serif;font-size: 15.008px;white-space: normal;background-color: rgb(255, 255, 255)">
+    美国军方于关岛上设置的联合台风警报中心（现已移至夏威夷），在二次大战习惯对热带气旋给予名字，方便识别。最初的名字全为女性，后来在1979年加入男性名字。从1947年至1999年，西北太平洋及南中国海区域的热带气旋非正式地采用上述名字。
+</p>
+<p style="margin-top: 0.5em;margin-bottom: 0.5em;color: rgb(32, 33, 34);font-family: sans-serif;font-size: 15.008px;white-space: normal;background-color: rgb(255, 255, 255)">
+    早在20世纪初至中期，中国及日本已自行为区内的热带气旋编配一个4位数字编号，编号首2位为年份，后2位为该年顺序号。例如0312，即2003年第12号热带气旋。而美国海军则为整个西北太平洋内的热带气旋编配一个两位数字编号，之后并改成两位元数字加上英文字母<strong>W</strong>。
+</p>
+<p style="margin-top: 0.5em;margin-bottom: 0.5em;color: rgb(32, 33, 34);font-family: sans-serif;font-size: 15.008px;white-space: normal;background-color: rgb(255, 255, 255)">
+    为减少混乱，日本在1981年获委托为每个西北太平洋及南中国海区域内的达到热带风暴强度的热带气旋编配一个国际编号，但容许其他地区继续自行给予编号。自此，在大部分国际发布中，发布机构会把国际编号放在括号内（JTWC除外）。但是，各气象机构有时对热带气旋的编号会有差别，主要是因为其对热带气旋强度的评估有所不同。例如在2006年太平洋台风季，中国气象局曾对一个未被日本气象厅命名的风暴（中国气象局的0614）编号，因此在余下的风季，前者的编号都比后者的多出一个<sup id="cite_ref-5" style="line-height: 1;unicode-bidi: isolate;white-space: nowrap">[5]</sup><sup id="cite_ref-6" style="line-height: 1;unicode-bidi: isolate;white-space: nowrap">[6]</sup>。
+</p>
+<p style="margin-top: 0.5em;margin-bottom: 0.5em;color: rgb(32, 33, 34);font-family: sans-serif;font-size: 15.008px;white-space: normal;background-color: rgb(255, 255, 255)">
+    1997年在香港举行的台风委员会第30次会议决定，由2000年开始，西北太平洋的热带气旋命名表由世界气象组织台风委员会（英语：WMO Typhoon Committee）制订。共有五份命名表分别由14个委员国各提供两个名字组成，名字会由所提供国家的英文国名顺序使用。不同于大西洋及东北太平洋，循环使用（即用完140个后名称，回到第一个重新开始）。日本气象厅会同时根据这一套新名单为这些热带气旋命名。这些名字及编号除了用于为国际航空及航海界发放的预测和警报外，亦是向国际媒体发放热带气旋消息时采用的规范名称。
+</p>
+<p style="margin-top: 0.5em;margin-bottom: 0.5em;color: rgb(32, 33, 34);font-family: sans-serif;font-size: 15.008px;white-space: normal;background-color: rgb(255, 255, 255)">
+    中国大陆、香港和澳门是台风委员会的会员，中国气象局、香港天文台及澳门气象局使用三家商议一致的中文译名。<sup id="cite_ref-HKO_7-0" style="line-height: 1;unicode-bidi: isolate;white-space: nowrap">[7]</sup><sup id="cite_ref-8" style="line-height: 1;unicode-bidi: isolate;white-space: nowrap">[8]</sup>台湾不是委员会会员，使用另行翻译的中文译名。另外，尽管台湾每年皆会受热带气旋侵袭，但由于联合国大会2758号决议，所以并非世界气象组织台风委员会的委员，不仅无法提供台风名称，亦无法提出除名要求。
+</p>
+<p style="margin-top: 0.5em;margin-bottom: 0.5em;color: rgb(32, 33, 34);font-family: sans-serif;font-size: 15.008px;white-space: normal;background-color: rgb(255, 255, 255)">
+    当热带气旋在某地区造成严重破坏，该委员国可要求将其除名。为该热带气旋起名的国家会再提一个名字作替补。例如中国大陆及香港会由市民提名，再选出若干优胜名字，提交世界气象组织确认选择其中一个名字。<sup id="cite_ref-9" style="line-height: 1;unicode-bidi: isolate;white-space: nowrap">[9]</sup>
+</p>
+<p style="margin-top: 0.5em;margin-bottom: 0.5em;color: rgb(32, 33, 34);font-family: sans-serif;font-size: 15.008px;white-space: normal;background-color: rgb(255, 255, 255)">
+    菲律宾大气地球物理和天文服务管理局未必会使用世界气象组织的台风命名，例如2020年造成重大破坏的台风莫拉菲 (2020年)，在菲律宾的名字为“坤塔”（Quinta），和世界气象组织一样，如果造成严重伤亡则将被除名。
+</p>
+<p>
+    <br/>
+</p>
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6119901489929327"
+     crossorigin="anonymous"></script>
+<!-- NEW UI SKY4K -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-6119901489929327"
+     data-ad-slot="4759064559"
+     data-ad-format="auto"
+     data-full-width-responsive="true"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+<h3 style="margin: 0.3em 0px 0px; padding-top: 0.5em; padding-bottom: 0px; overflow: hidden; font-size: 1.2em; line-height: 1.6; font-family: sans-serif; white-space: normal; background-color: rgb(255, 255, 255);">
+    <span class="mw-headline" id="颱風命名中英對照表">台风命名中英对照表</span>
+</h3>
+<table class="wikitable">
+    <tbody>
+        <tr class="firstRow">
+            <th style="border-color: rgb(162, 169, 177); padding: 0.2em 0.4em; background-color: rgb(234, 236, 240); text-align: center;">
+                提供国家／地区
+            </th>
+            <th colspan="5" style="border-color: rgb(162, 169, 177); padding: 0.2em 0.4em; background-color: rgb(234, 236, 240); text-align: center;">
+                台风名称中英标准翻译对照表<br/>（台湾译名与中港澳统一译名不一致的以括号标出）
+            </th>
+        </tr>
+        <tr>
+            <td align="left" style="border-color: rgb(162, 169, 177); padding: 0.2em 0.4em;">
+                柬埔寨
+            </td>
+            <td style="border-color: rgb(162, 169, 177); padding: 0.2em 0.4em;">
+                达维（丹瑞）<br/>Damrey
+            </td>
+            <td style="border-color: rgb(162, 169, 177); padding: 0.2em 0.4em;">
+                康妮（康芮）<br/>Kong-rey
+            </td>
+            <td style="border-color: rgb(162, 169, 177); padding: 0.2em 0.4em;">
+                娜基莉（娜克莉）<br/>Nakri
+            </td>
+            <td style="border-color: rgb(162, 169, 177); padding: 0.2em 0.4em;">
+                科罗旺<br/>Krovanh
+            </td>
+            <td style="border-color: rgb(162, 169, 177); padding: 0.2em 0.4em;">
+                翠丝<br/>Trases
+            </td>
+        </tr>
+        <tr>
+            <td align="left" style="border-color: rgb(162, 169, 177); padding: 0.2em 0.4em;">
+                中国大陆
+            </td>
+            <td style="border-color: rgb(162, 169, 177); padding: 0.2em 0.4em;">
+                海葵<br/>Haikui
+            </td>
+            <td style="border-color: rgb(162, 169, 177); padding: 0.2em 0.4em;">
+                银杏<br/>Yinxing
+            </td>
+            <td style="border-color: rgb(162, 169, 177); padding: 0.2em 0.4em;">
+                风神<br/>Fengshen
+            </td>
+            <td style="border-color: rgb(162, 169, 177); padding: 0.2em 0.4em;">
+                杜鹃<br/>Dujuan
+            </td>
+            <td style="border-color: rgb(162, 169, 177); padding: 0.2em 0.4em;">
+                木兰<br/>Mulan
+            </td>
+        </tr>
+        <tr>
+            <td align="left" style="border-color: rgb(162, 169, 177); padding: 0.2em 0.4em;">
+                北韩
+            </td>
+            <td style="border-color: rgb(162, 169, 177); padding: 0.2em 0.4em;">
+                鸿雁<br/>Kirogi
+            </td>
+            <td style="border-color: rgb(162, 169, 177); padding: 0.2em 0.4em;">
+                桃芝（桔梗）<br/>Toraji
+            </td>
+            <td style="border-color: rgb(162, 169, 177); padding: 0.2em 0.4em;">
+                海鸥<br/>Kalmaegi
+            </td>
+            <td style="border-color: rgb(162, 169, 177); padding: 0.2em 0.4em;">
+                舒力基<br/>Surigae
+            </td>
+            <td style="border-color: rgb(162, 169, 177); padding: 0.2em 0.4em;">
+                米雷<br/>Meari
+            </td>
+        </tr>
+        <tr>
+            <td align="left" style="border-color: rgb(162, 169, 177); padding: 0.2em 0.4em;">
+                香港
+            </td>
+            <td style="border-color: rgb(162, 169, 177); padding: 0.2em 0.4em;">
+                鸳鸯<br/>Yun-yeung
+            </td>
+            <td style="border-color: rgb(162, 169, 177); padding: 0.2em 0.4em;">
+                万宜<br/>Man-yi
+            </td>
+            <td style="border-color: rgb(162, 169, 177); padding: 0.2em 0.4em;">
+                凤凰<br/>Fung-wong
+            </td>
+            <td style="border-color: rgb(162, 169, 177); padding: 0.2em 0.4em;">
+                彩云<br/>Choi-wan
+            </td>
+            <td style="border-color: rgb(162, 169, 177); padding: 0.2em 0.4em;">
+                马鞍<br/>Ma-on
+            </td>
+        </tr>
+        <tr>
+            <td align="left" style="border-color: rgb(162, 169, 177); padding: 0.2em 0.4em;">
+                日本
+            </td>
+            <td style="border-color: rgb(162, 169, 177); padding: 0.2em 0.4em;">
+                小犬<br/>Koinu
+            </td>
+            <td style="border-color: rgb(162, 169, 177); padding: 0.2em 0.4em;">
+                天兔<br/>Usagi
+            </td>
+            <td style="border-color: rgb(162, 169, 177); padding: 0.2em 0.4em;">
+                天琴<br/>Koto
+            </td>
+            <td style="border-color: rgb(162, 169, 177); padding: 0.2em 0.4em;">
+                小熊<br/>Koguma
+            </td>
+            <td style="border-color: rgb(162, 169, 177); padding: 0.2em 0.4em;">
+                蝎虎<br/>Tokage
+            </td>
+        </tr>
+        <tr>
+            <td align="left" style="border-color: rgb(162, 169, 177); padding: 0.2em 0.4em;">
+                寮国
+            </td>
+            <td style="border-color: rgb(162, 169, 177); padding: 0.2em 0.4em;">
+                布拉万<br/>Bolaven
+            </td>
+            <td style="border-color: rgb(162, 169, 177); padding: 0.2em 0.4em;">
+                帕布<br/>Pabuk
+            </td>
+            <td style="border-color: rgb(162, 169, 177); padding: 0.2em 0.4em;">
+                洛鞍<br/>Nokaen
+            </td>
+            <td style="border-color: rgb(162, 169, 177); padding: 0.2em 0.4em;">
+                蔷琵<br/>Champi
+            </td>
+            <td style="border-color: rgb(162, 169, 177); padding: 0.2em 0.4em;">
+                轩岚诺<br/>Hinnamnor
+            </td>
+        </tr>
+        <tr>
+            <td align="left" style="border-color: rgb(162, 169, 177); padding: 0.2em 0.4em;">
+                澳门
+            </td>
+            <td style="border-color: rgb(162, 169, 177); padding: 0.2em 0.4em;">
+                三巴<br/>Sanba
+            </td>
+            <td style="border-color: rgb(162, 169, 177); padding: 0.2em 0.4em;">
+                蝴蝶<br/>Wutip
+            </td>
+            <td style="border-color: rgb(162, 169, 177); padding: 0.2em 0.4em;">
+                西望洋<br/>Penha
+            </td>
+            <td style="border-color: rgb(162, 169, 177); padding: 0.2em 0.4em;">
+                烟花<br/>In-Fa
+            </td>
+            <td style="border-color: rgb(162, 169, 177); padding: 0.2em 0.4em;">
+                梅花<br/>Muifa
+            </td>
+        </tr>
+        <tr>
+            <td align="left" style="border-color: rgb(162, 169, 177); padding: 0.2em 0.4em;">
+                马来西亚
+            </td>
+            <td style="border-color: rgb(162, 169, 177); padding: 0.2em 0.4em;">
+                杰拉华（鲤鱼）<br/>Jelawat
+            </td>
+            <td style="border-color: rgb(162, 169, 177); padding: 0.2em 0.4em;">
+                圣帕<br/>Sepat
+            </td>
+            <td style="border-color: rgb(162, 169, 177); padding: 0.2em 0.4em;">
+                鹦鹉<br/>Nuri
+            </td>
+            <td style="border-color: rgb(162, 169, 177); padding: 0.2em 0.4em;">
+                查帕卡<br/>Cempaka
+            </td>
+            <td style="border-color: rgb(162, 169, 177); padding: 0.2em 0.4em;">
+                苗柏（莫柏）<br/>Merbok
+            </td>
+        </tr>
+        <tr>
+            <td align="left" style="border-color: rgb(162, 169, 177); padding: 0.2em 0.4em;">
+                密克罗尼西亚
+            </td>
+            <td style="border-color: rgb(162, 169, 177); padding: 0.2em 0.4em;">
+                艾云尼（艾维尼）<br/>Ewiniar
+            </td>
+            <td style="border-color: rgb(162, 169, 177); padding: 0.2em 0.4em;">
+                木恩<br/>Mun
+            </td>
+            <td style="border-color: rgb(162, 169, 177); padding: 0.2em 0.4em;">
+                森拉克（辛乐克）<br/>Sinlaku
+            </td>
+            <td style="border-color: rgb(162, 169, 177); padding: 0.2em 0.4em;">
+                尼伯特<br/>Nepartak
+            </td>
+            <td style="border-color: rgb(162, 169, 177); padding: 0.2em 0.4em;">
+                南玛都<br/>Nanmadol
+            </td>
+        </tr>
+        <tr>
+            <td align="left" style="border-color: rgb(162, 169, 177); padding: 0.2em 0.4em;">
+                菲律宾
+            </td>
+            <td style="border-color: rgb(162, 169, 177); padding: 0.2em 0.4em;">
+                马力斯<br/>Maliksi
+            </td>
+            <td style="border-color: rgb(162, 169, 177); padding: 0.2em 0.4em;">
+                丹娜丝<br/>Danas
+            </td>
+            <td style="border-color: rgb(162, 169, 177); padding: 0.2em 0.4em;">
+                黑格比（哈格比）<br/>Hagupit
+            </td>
+            <td style="border-color: rgb(162, 169, 177); padding: 0.2em 0.4em;">
+                卢碧<br/>Lupit
+            </td>
+            <td style="border-color: rgb(162, 169, 177); padding: 0.2em 0.4em;">
+                塔拉斯<br/>Talas
+            </td>
+        </tr>
+        <tr>
+            <td align="left" style="border-color: rgb(162, 169, 177); padding: 0.2em 0.4em;">
+                南韩
+            </td>
+            <td style="border-color: rgb(162, 169, 177); padding: 0.2em 0.4em;">
+                格美（凯米）<br/>Gaemi
+            </td>
+            <td style="border-color: rgb(162, 169, 177); padding: 0.2em 0.4em;">
+                百合<br/>Nari
+            </td>
+            <td style="border-color: rgb(162, 169, 177); padding: 0.2em 0.4em;">
+                蔷薇（蔷蜜）<br/>Jangmi
+            </td>
+            <td style="border-color: rgb(162, 169, 177); padding: 0.2em 0.4em;">
+                银河<br/>Mirinae
+            </td>
+            <td style="border-color: rgb(162, 169, 177); padding: 0.2em 0.4em;">
+                奥鹿（诺卢）<br/>Noru
+            </td>
+        </tr>
+        <tr>
+            <td align="left" style="border-color: rgb(162, 169, 177); padding: 0.2em 0.4em;">
+                泰国
+            </td>
+            <td style="border-color: rgb(162, 169, 177); padding: 0.2em 0.4em;">
+                派比安（巴比仑）<br/>Prapiroon
+            </td>
+            <td style="border-color: rgb(162, 169, 177); padding: 0.2em 0.4em;">
+                韦帕（薇帕）<br/>Wipha
+            </td>
+            <td style="border-color: rgb(162, 169, 177); padding: 0.2em 0.4em;">
+                米克拉<br/>Mekkhala
+            </td>
+            <td style="border-color: rgb(162, 169, 177); padding: 0.2em 0.4em;">
+                妮妲<br/>Nida
+            </td>
+            <td style="border-color: rgb(162, 169, 177); padding: 0.2em 0.4em;">
+                玫瑰（库拉）<br/>Kulap
+            </td>
+        </tr>
+        <tr>
+            <td align="left" style="border-color: rgb(162, 169, 177); padding: 0.2em 0.4em;">
+                美国
+            </td>
+            <td style="border-color: rgb(162, 169, 177); padding: 0.2em 0.4em;">
+                玛莉亚<br/>Maria
+            </td>
+            <td style="border-color: rgb(162, 169, 177); padding: 0.2em 0.4em;">
+                范斯高<br/>Francisco
+            </td>
+            <td style="border-color: rgb(162, 169, 177); padding: 0.2em 0.4em;">
+                海高斯（无花果）<br/>Higos
+            </td>
+            <td style="border-color: rgb(162, 169, 177); padding: 0.2em 0.4em;">
+                奥麦斯<br/>Omais
+            </td>
+            <td style="border-color: rgb(162, 169, 177); padding: 0.2em 0.4em;">
+                洛克<br/>Roke
+            </td>
+        </tr>
+        <tr>
+            <td align="left" style="border-color: rgb(162, 169, 177); padding: 0.2em 0.4em;">
+                越南
+            </td>
+            <td style="border-color: rgb(162, 169, 177); padding: 0.2em 0.4em;">
+                山神<br/>Son-Tinh
+            </td>
+            <td style="border-color: rgb(162, 169, 177); padding: 0.2em 0.4em;">
+                竹节草<br/>Co-May
+            </td>
+            <td style="border-color: rgb(162, 169, 177); padding: 0.2em 0.4em;">
+                巴威<br/>Bavi
+            </td>
+            <td style="border-color: rgb(162, 169, 177); padding: 0.2em 0.4em;">
+                康森<br/>Conson
+            </td>
+            <td style="border-color: rgb(162, 169, 177); padding: 0.2em 0.4em;">
+                桑卡<br/>Sonca
+            </td>
+        </tr>
+        <tr>
+            <td align="left" style="border-color: rgb(162, 169, 177); padding: 0.2em 0.4em;">
+                柬埔寨
+            </td>
+            <td style="border-color: rgb(162, 169, 177); padding: 0.2em 0.4em;">
+                安比<br/>Ampil
+            </td>
+            <td style="border-color: rgb(162, 169, 177); padding: 0.2em 0.4em;">
+                罗莎（科罗尔莎）<br/>Krosa
+            </td>
+            <td style="border-color: rgb(162, 169, 177); padding: 0.2em 0.4em;">
+                美莎克（梅莎）<br/>Maysak
+            </td>
+            <td style="border-color: rgb(162, 169, 177); padding: 0.2em 0.4em;">
+                灿都（璨树）<br/>Chanthu
+            </td>
+            <td style="border-color: rgb(162, 169, 177); padding: 0.2em 0.4em;">
+                纳沙/尼莎<br/>Nesat
+            </td>
+        </tr>
+        <tr>
+            <td align="left" style="border-color: rgb(162, 169, 177); padding: 0.2em 0.4em;">
+                中国大陆
+            </td>
+            <td style="border-color: rgb(162, 169, 177); padding: 0.2em 0.4em;">
+                悟空<br/>Wukong
+            </td>
+            <td style="border-color: rgb(162, 169, 177); padding: 0.2em 0.4em;">
+                白鹿<br/>Bailu
+            </td>
+            <td style="border-color: rgb(162, 169, 177); padding: 0.2em 0.4em;">
+                海神<br/>Haishen
+            </td>
+            <td style="border-color: rgb(162, 169, 177); padding: 0.2em 0.4em;">
+                电母<br/>Dianmu
+            </td>
+            <td style="border-color: rgb(162, 169, 177); padding: 0.2em 0.4em;">
+                海棠<br/>Haitang
+            </td>
+        </tr>
+        <tr>
+            <td align="left" style="border-color: rgb(162, 169, 177); padding: 0.2em 0.4em;">
+                北韩
+            </td>
+            <td style="border-color: rgb(162, 169, 177); padding: 0.2em 0.4em;">
+                云雀<br/>Jongdari
+            </td>
+            <td style="border-color: rgb(162, 169, 177); padding: 0.2em 0.4em;">
+                杨柳<br/>Podul
+            </td>
+            <td style="border-color: rgb(162, 169, 177); padding: 0.2em 0.4em;">
+                红霞<br/>Noul
+            </td>
+            <td style="border-color: rgb(162, 169, 177); padding: 0.2em 0.4em;">
+                蒲公英<br/>Mindulle
+            </td>
+            <td style="border-color: rgb(162, 169, 177); padding: 0.2em 0.4em;">
+                尼格（奈格）<br/>Nalgae
+            </td>
+        </tr>
+        <tr>
+            <td align="left" style="border-color: rgb(162, 169, 177); padding: 0.2em 0.4em;">
+                香港
+            </td>
+            <td style="border-color: rgb(162, 169, 177); padding: 0.2em 0.4em;">
+                珊珊<br/>Shanshan
+            </td>
+            <td style="border-color: rgb(162, 169, 177); padding: 0.2em 0.4em;">
+                玲玲<br/>Lingling
+            </td>
+            <td style="border-color: rgb(162, 169, 177); padding: 0.2em 0.4em;">
+                白海豚<br/>Dolphin
+            </td>
+            <td style="border-color: rgb(162, 169, 177); padding: 0.2em 0.4em;">
+                狮子山<br/>Lionrock
+            </td>
+            <td style="border-color: rgb(162, 169, 177); padding: 0.2em 0.4em;">
+                榕树<br/>Banyan
+            </td>
+        </tr>
+        <tr>
+            <td align="left" style="border-color: rgb(162, 169, 177); padding: 0.2em 0.4em;">
+                日本
+            </td>
+            <td style="border-color: rgb(162, 169, 177); padding: 0.2em 0.4em;">
+                摩羯<br/>Yagi
+            </td>
+            <td style="border-color: rgb(162, 169, 177); padding: 0.2em 0.4em;">
+                剑鱼<br/>Kajiki
+            </td>
+            <td style="border-color: rgb(162, 169, 177); padding: 0.2em 0.4em;">
+                鲸鱼<br/>Kujira
+            </td>
+            <td style="border-color: rgb(162, 169, 177); padding: 0.2em 0.4em;">
+                圆规<br/>Kompasu
+            </td>
+            <td style="border-color: rgb(162, 169, 177); padding: 0.2em 0.4em;">
+                山猫<br/>Yamaneko
+            </td>
+        </tr>
+        <tr>
+            <td align="left" style="border-color: rgb(162, 169, 177); padding: 0.2em 0.4em;">
+                寮国
+            </td>
+            <td style="border-color: rgb(162, 169, 177); padding: 0.2em 0.4em;">
+                丽琵<br/>Leepi
+            </td>
+            <td style="border-color: rgb(162, 169, 177); padding: 0.2em 0.4em;">
+                蓝湖<br/>Nongfa
+            </td>
+            <td style="border-color: rgb(162, 169, 177); padding: 0.2em 0.4em;">
+                灿鸿（昌鸿）<br/>Chan-hom
+            </td>
+            <td style="border-color: rgb(162, 169, 177); padding: 0.2em 0.4em;">
+                南川（南修）<br/>Namtheun
+            </td>
+            <td style="border-color: rgb(162, 169, 177); padding: 0.2em 0.4em;">
+                帕卡<br/>Pakhar
+            </td>
+        </tr>
+        <tr>
+            <td align="left" style="border-color: rgb(162, 169, 177); padding: 0.2em 0.4em;">
+                澳门
+            </td>
+            <td style="border-color: rgb(162, 169, 177); padding: 0.2em 0.4em;">
+                贝碧嘉（贝碧佳）<br/>Bebinca
+            </td>
+            <td style="border-color: rgb(162, 169, 177); padding: 0.2em 0.4em;">
+                琵琶<br/>Peipah
+            </td>
+            <td style="border-color: rgb(162, 169, 177); padding: 0.2em 0.4em;">
+                琵鹭<br/>Peilou
+            </td>
+            <td style="border-color: rgb(162, 169, 177); padding: 0.2em 0.4em;">
+                玛瑙<br/>Malou
+            </td>
+            <td style="border-color: rgb(162, 169, 177); padding: 0.2em 0.4em;">
+                珊瑚<br/>Sanvu
+            </td>
+        </tr>
+        <tr>
+            <td align="left" style="border-color: rgb(162, 169, 177); padding: 0.2em 0.4em;">
+                马来西亚
+            </td>
+            <td style="border-color: rgb(162, 169, 177); padding: 0.2em 0.4em;">
+                普拉桑<br/>Pulasan
+            </td>
+            <td style="border-color: rgb(162, 169, 177); padding: 0.2em 0.4em;">
+                塔巴<br/>Tapah
+            </td>
+            <td style="border-color: rgb(162, 169, 177); padding: 0.2em 0.4em;">
+                浪卡（南卡）<br/>Nangka
+            </td>
+            <td style="border-color: rgb(162, 169, 177); padding: 0.2em 0.4em;">
+                妮亚图<br/>Nyatoh
+            </td>
+            <td style="border-color: rgb(162, 169, 177); padding: 0.2em 0.4em;">
+                玛娃<br/>Mawar
+            </td>
+        </tr>
+        <tr>
+            <td align="left" style="border-color: rgb(162, 169, 177); padding: 0.2em 0.4em;">
+                密克罗尼西亚
+            </td>
+            <td style="border-color: rgb(162, 169, 177); padding: 0.2em 0.4em;">
+                苏力<br/>Soulik
+            </td>
+            <td style="border-color: rgb(162, 169, 177); padding: 0.2em 0.4em;">
+                米娜（米塔）<br/>Mitag
+            </td>
+            <td style="border-color: rgb(162, 169, 177); padding: 0.2em 0.4em;">
+                沙德尔<br/>Saudel
+            </td>
+            <td style="border-color: rgb(162, 169, 177); padding: 0.2em 0.4em;">
+                雷伊<br/>Rai
+            </td>
+            <td style="border-color: rgb(162, 169, 177); padding: 0.2em 0.4em;">
+                古超（谷超）<br/>Guchol
+            </td>
+        </tr>
+        <tr>
+            <td align="left" style="border-color: rgb(162, 169, 177); padding: 0.2em 0.4em;">
+                菲律宾
+            </td>
+            <td style="border-color: rgb(162, 169, 177); padding: 0.2em 0.4em;">
+                西马仑（西马隆）<br/>Cimaron
+            </td>
+            <td style="border-color: rgb(162, 169, 177); padding: 0.2em 0.4em;">
+                桦加沙（桦加萨）<br/>Ragasa
+            </td>
+            <td style="border-color: rgb(162, 169, 177); padding: 0.2em 0.4em;">
+                紫檀<br/>Narra
+            </td>
+            <td style="border-color: rgb(162, 169, 177); padding: 0.2em 0.4em;">
+                马勒卡<br/>Malakas
+            </td>
+            <td style="border-color: rgb(162, 169, 177); padding: 0.2em 0.4em;">
+                泰利<br/>Talim
+            </td>
+        </tr>
+        <tr>
+            <td align="left" style="border-color: rgb(162, 169, 177); padding: 0.2em 0.4em;">
+                南韩
+            </td>
+            <td style="border-color: rgb(162, 169, 177); padding: 0.2em 0.4em;">
+                飞燕（燕子）<br/>Jebi
+            </td>
+            <td style="border-color: rgb(162, 169, 177); padding: 0.2em 0.4em;">
+                浣熊<br/>Neoguri
+            </td>
+            <td style="border-color: rgb(162, 169, 177); padding: 0.2em 0.4em;">
+                简拉维<br/>Gaenari
+            </td>
+            <td style="border-color: rgb(162, 169, 177); padding: 0.2em 0.4em;">
+                鲇鱼（梅姬）<br/>Megi
+            </td>
+            <td style="border-color: rgb(162, 169, 177); padding: 0.2em 0.4em;">
+                杜苏芮<br/>Doksuri
+            </td>
+        </tr>
+        <tr>
+            <td align="left" style="border-color: rgb(162, 169, 177); padding: 0.2em 0.4em;">
+                泰国
+            </td>
+            <td style="border-color: rgb(162, 169, 177); padding: 0.2em 0.4em;">
+                山陀儿<br/>Krathon
+            </td>
+            <td style="border-color: rgb(162, 169, 177); padding: 0.2em 0.4em;">
+                博罗依<br/>Bualoi
+            </td>
+            <td style="border-color: rgb(162, 169, 177); padding: 0.2em 0.4em;">
+                艾莎尼（闪电）<br/>Atsani
+            </td>
+            <td style="border-color: rgb(162, 169, 177); padding: 0.2em 0.4em;">
+                暹芭（芙蓉）<br/>Chaba
+            </td>
+            <td style="border-color: rgb(162, 169, 177); padding: 0.2em 0.4em;">
+                卡努<br/>Khanun
+            </td>
+        </tr>
+        <tr>
+            <td align="left" style="border-color: rgb(162, 169, 177); padding: 0.2em 0.4em;">
+                美国
+            </td>
+            <td style="border-color: rgb(162, 169, 177); padding: 0.2em 0.4em;">
+                百里嘉<br/>Barijat
+            </td>
+            <td style="border-color: rgb(162, 169, 177); padding: 0.2em 0.4em;">
+                麦德姆<br/>Matmo
+            </td>
+            <td style="border-color: rgb(162, 169, 177); padding: 0.2em 0.4em;">
+                艾涛（艾陶）<br/>Etau
+            </td>
+            <td style="border-color: rgb(162, 169, 177); padding: 0.2em 0.4em;">
+                艾利<br/>Aere
+            </td>
+            <td style="border-color: rgb(162, 169, 177); padding: 0.2em 0.4em;">
+                兰恩<br/>Lan
+            </td>
+        </tr>
+        <tr>
+            <td align="left" style="border-color: rgb(162, 169, 177); padding: 0.2em 0.4em;">
+                越南
+            </td>
+            <td style="border-color: rgb(162, 169, 177); padding: 0.2em 0.4em;">
+                潭美<br/>Trami
+            </td>
+            <td style="border-color: rgb(162, 169, 177); padding: 0.2em 0.4em;">
+                夏浪（哈隆）<br/>Halong
+            </td>
+            <td style="border-color: rgb(162, 169, 177); padding: 0.2em 0.4em;">
+                班朗<br/>Bang-Lang
+            </td>
+            <td style="border-color: rgb(162, 169, 177); padding: 0.2em 0.4em;">
+                桑达<br/>Songda
+            </td>
+            <td style="border-color: rgb(162, 169, 177); padding: 0.2em 0.4em;">
+                苏拉<br/>Saola<br/><br/>
+            </td>
+        </tr>
+    </tbody>
+</table>
+<p>
+    <br/>
+</p>
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6119901489929327"
+     crossorigin="anonymous"></script>
+<!-- NEW UI SKY4K -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-6119901489929327"
+     data-ad-slot="4759064559"
+     data-ad-format="auto"
+     data-full-width-responsive="true"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+<h2 style="margin: 1em 0px 0.25em; padding: 0px; overflow: hidden; border-bottom: 1px solid rgb(162, 169, 177); font-weight: normal; font-family: &quot;Linux Libertine&quot;, Georgia, Times, serif; line-height: 1.3; white-space: normal; background-color: rgb(255, 255, 255);">
+    <span class="mw-headline" id="颱風預警">台风预警</span><span class="mw-editsection" style="font-family: sans-serif; user-select: none; font-size: small; margin-left: 1em; vertical-align: baseline; line-height: 1em; unicode-bidi: isolate; margin-right: 0px;"><span class="mw-editsection-bracket" style="margin-right: 0.25em; color: #54595D;">[</span>编辑<span class="mw-editsection-bracket" style="margin-left: 0.25em; color: #54595D;">]</span></span>
+</h2>
+<div role="note" class="hatnote navigation-not-searchable" style="font-size: small; padding-left: 2em; margin-bottom: 0.8em; margin-top: 0.8em; color: rgb(32, 33, 34); font-family: sans-serif; white-space: normal; background-color: rgb(255, 255, 255);">
+    主条目：热带气旋警告
+</div>
+<div class="thumb tright" style="clear: right; float: right; width: auto; background-color: rgb(255, 255, 255); margin: 0.5em 0px 1.3em 1.4em; color: rgb(32, 33, 34); font-family: sans-serif; font-size: 15.008px; white-space: normal;">
+    <div class="thumbinner" style="padding: 3px; text-align: center; overflow: hidden; border: 1px solid rgb(200, 204, 209); background-color: rgb(248, 249, 250); font-size: 14.1075px; width: 222px;">
+        <img alt="" src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/02/Cityscape_of_Taipei_Taiwan_during_typhoon_2015.jpg/220px-Cityscape_of_Taipei_Taiwan_during_typhoon_2015.jpg" decoding="async" width="220" height="127" class="thumbimage" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/0/02/Cityscape_of_Taipei_Taiwan_during_typhoon_2015.jpg/330px-Cityscape_of_Taipei_Taiwan_during_typhoon_2015.jpg 1.5x, //upload.wikimedia.org/wikipedia/commons/thumb/0/02/Cityscape_of_Taipei_Taiwan_during_typhoon_2015.jpg/440px-Cityscape_of_Taipei_Taiwan_during_typhoon_2015.jpg 2x" data-file-width="4538" data-file-height="2611" style="border: 1px solid rgb(200, 204, 209); vertical-align: middle;"/>
+        <div class="thumbcaption" style="text-align: left; line-height: 1.4em; padding: 3px; border: 0px; font-size: 13.2611px;">
+            <div class="magnify" style="float: right; margin-left: 3px; margin-right: 0px;"></div>2015年7月12日，刮台风时的台北城市天际线
+        </div>
+    </div>
+</div>
+<p style="margin-top: 0.5em; margin-bottom: 0.5em; color: rgb(32, 33, 34); font-family: sans-serif; font-size: 15.008px; white-space: normal; background-color: rgb(255, 255, 255);">
+    台风预警是热带气旋盛行地区，于风暴可能侵袭期间，由各地专责机构发出的预告、警告。目的在于通知当地居民及民防组织，采取适当的预防措施，如加固房屋门窗、加强排水作为或预防性撤离。这些警告涉及警告范围内可能遭受的灾害，而不是单纯重复热带气旋的预测路径及强度，对于保障生命及财产安全更为重要。
+</p>
+<h2 style="margin: 1em 0px 0.25em; padding: 0px; overflow: hidden; border-bottom: 1px solid rgb(162, 169, 177); font-weight: normal; font-family: &quot;Linux Libertine&quot;, Georgia, Times, serif; line-height: 1.3; white-space: normal; background-color: rgb(255, 255, 255);">
+    <span id=".E6.B5.81.E8.A1.8C.E6.96.87.E5.8C.96"></span><span class="mw-headline" id="流行文化">流行文化</span><span class="mw-editsection" style="font-family: sans-serif; user-select: none; font-size: small; margin-left: 1em; vertical-align: baseline; line-height: 1em; unicode-bidi: isolate; margin-right: 0px;"><span class="mw-editsection-bracket" style="margin-right: 0.25em; color: #54595D;">[</span>编辑<span class="mw-editsection-bracket" style="margin-left: 0.25em; color: #54595D;">]</span></span>
+</h2>
+<ul style="list-style-image: url(&quot;/w/skins/Vector/resources/common/images/bullet-icon.svg?d4515&quot;); margin-top: 0.3em; margin-left: 1.6em; padding: 0px; color: rgb(32, 33, 34); font-family: sans-serif; font-size: 15.008px; white-space: normal; background-color: rgb(255, 255, 255);" class=" list-paddingleft-2">
+    <li>
+        <p>
+            我爱温黛，由香港歌手苏永康作曲及主唱，黄伟文填词，并收录于他的唱片《康定情歌》中。
+        </p>
+    </li>
+    <li>
+        <p>
+            十号风球，由香港已故歌手张国荣主唱，蔡德才、黄耀明作曲，周耀辉填词，并收录于他与黄耀明的合辑《Crossover》中。
+        </p>
+    </li>
+    <li>
+        <p>
+            那年，雨不停国，台湾首部关注莫拉克风灾的电视剧。
+        </p>
+    </li>
+    <li>
+        <p>
+            哆啦A梦 (动画)水田版第105集第198单元〈小台风〉（港）/〈台风子〉（台），故事讲述看到大家都养了宠物，大雄很不高兴，哆啦A梦便给了他一个宠物蛋，但不知道是什么，后来才知道是台风的——这是未来科学家为了研究台风形成而制作的。但大雄十分认真地养，培养了深厚的感情。后来在百年一遇的一次台风侵袭日本时，小台风与其对抗，消失了。众人欢庆的时候，大雄仰望天空，痛哭流涕。
+        </p>
+    </li>
+    <li>
+        <p>
+            幼儿杂志《小跳豆》第384期主题是“台风来了”，其中一页“台风名字由谁定？”便为台风委员会工作作简单介绍。
+        </p>
+    </li>
+</ul>
+<p>
+    <br/>
+</p>
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6119901489929327"
+     crossorigin="anonymous"></script>
+<!-- NEW UI SKY4K -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-6119901489929327"
+     data-ad-slot="4759064559"
+     data-ad-format="auto"
+     data-full-width-responsive="true"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+<h2 style="margin: 1em 0px 0.25em; padding: 0px; overflow: hidden; border-bottom: 1px solid rgb(162, 169, 177); font-weight: normal; font-family: &quot;Linux Libertine&quot;, Georgia, Times, serif; line-height: 1.3; white-space: normal; background-color: rgb(255, 255, 255);">
+    <span class="mw-headline" id="参考文献">参考文献</span>
+</h2>
+<div class="reflist" style="font-size: 13.5072px; margin-bottom: 0.5em; color: rgb(32, 33, 34); font-family: sans-serif; white-space: normal; background-color: rgb(255, 255, 255); list-style-type: decimal;">
+    <ol class="references list-paddingleft-2" style="list-style-type: inherit;">
+        <li>
+            <p>
+                <span class="mw-cite-backlink" style="user-select: none;"><strong>^</strong></span>&nbsp;<span class="reference-text">世界气象组织&nbsp;CMM (WMO-No.471)&nbsp;互联网档案馆的存档，存档日期2011-06-01.</span>
+            </p>
+        </li>
+        <li>
+            <p>
+                <span class="mw-cite-backlink" style="user-select: none;"><strong>^</strong></span>&nbsp;<span class="reference-text"><cite class="citation web" style="font-style: normal;">刘亚平.&nbsp;台风词源考证. 中国气象报社. 1989-07-05. （原始内容存档于2020-07-14）&nbsp;<span title="连接到中文（中国大陆）网页" style="cursor: default; color: #555555; font-size: 0.8em; bottom: 0.1em; font-weight: bold;">（中文（中国大陆））</span>.</cite><span title="ctx_ver=Z39.88-2004&amp;rfr_id=info%3Asid%2Fzh.wikipedia.org%3A%E9%A2%B1%E9%A2%A8&amp;rft.au=%E5%8A%89%E4%BA%9E%E5%B9%B3&amp;rft.btitle=%E5%8F%B0%E9%A3%8E%E8%AF%8D%E6%BA%90%E8%80%83%E8%AF%81&amp;rft.date=1989-07-05&amp;rft.genre=unknown&amp;rft.pub=%E4%B8%AD%E5%9C%8B%E6%B0%A3%E8%B1%A1%E5%A0%B1%E7%A4%BE&amp;rft_id=http%3A%2F%2Fwww.cma.gov.cn%2Fkppd%2Fkppdqxwq%2Fkppdjckp%2F201212%2Ft20121211_195489.html&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook" class="Z3988"></span></span>
+            </p>
+        </li>
+        <li>
+            <p>
+                <span class="mw-cite-backlink" style="user-select: none;"><strong>^</strong></span>&nbsp;<span class="reference-text"><cite class="citation web" style="font-style: normal;">信欣.&nbsp;三台风海上混战会发生什么？. 中国天气. 2015-07-06&nbsp;<span class="reference-accessdate">[<span class="nowrap">2016-01-25</span>]</span>. （原始内容存档于2016-02-01）.</cite><span title="ctx_ver=Z39.88-2004&amp;rfr_id=info%3Asid%2Fzh.wikipedia.org%3A%E9%A2%B1%E9%A2%A8&amp;rft.au=%E4%BF%A1%E6%AC%A3&amp;rft.btitle=%E4%B8%89%E5%8F%B0%E9%A3%8E%E6%B5%B7%E4%B8%8A%E6%B7%B7%E6%88%98%E4%BC%9A%E5%8F%91%E7%94%9F%E4%BB%80%E4%B9%88%EF%BC%9F&amp;rft.date=2015-07-06&amp;rft.genre=unknown&amp;rft.pub=%E4%B8%AD%E5%9B%BD%E5%A4%A9%E6%B0%94&amp;rft_id=http%3A%2F%2Fwww.weather.com.cn%2Fzt%2Ftqzt%2F349321.shtml&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook" class="Z3988"></span></span>
+            </p>
+        </li>
+        <li>
+            <p>
+                <span class="mw-cite-backlink" style="user-select: none;"><strong>^</strong></span>&nbsp;<span class="reference-text"><cite class="citation book" style="font-style: normal;">平沼, 洋司; 花木, 亮; 槇野, 修. あの日の空もよう 天気で振り返る戦後50年. 日本: PHP研究所. 1995-08-07&nbsp;<span title="连接到日语网页" style="cursor: default; color: #555555; font-size: 0.8em; bottom: 0.1em; font-weight: bold;">（日语）</span>.</cite><span title="ctx_ver=Z39.88-2004&amp;rfr_id=info%3Asid%2Fzh.wikipedia.org%3A%E9%A2%B1%E9%A2%A8&amp;rft.au=%E6%A7%87%E9%87%8E%2C+%E4%BF%AE&amp;rft.au=%E8%8A%B1%E6%9C%A8%2C+%E4%BA%AE&amp;rft.aufirst=%E6%B4%8B%E5%8F%B8&amp;rft.aulast=%E5%B9%B3%E6%B2%BC&amp;rft.btitle=%E3%81%82%E3%81%AE%E6%97%A5%E3%81%AE%E7%A9%BA%E3%82%82%E3%82%88%E3%81%86+%E5%A4%A9%E6%B0%97%E3%81%A7%E6%8C%AF%E3%82%8A%E8%BF%94%E3%82%8B%E6%88%A6%E5%BE%8C50%E5%B9%B4&amp;rft.date=1995-08-07&amp;rft.genre=book&amp;rft.place=%E6%97%A5%E6%9C%AC&amp;rft.pub=PHP%E7%A0%94%E7%A9%B6%E6%89%80&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook" class="Z3988"></span></span>
+            </p>
+        </li>
+        <li>
+            <p>
+                <span class="mw-cite-backlink" style="user-select: none;"><strong>^</strong></span>&nbsp;<span class="reference-text">日本气象厅，2006年热带气旋路径图&nbsp;互联网档案馆的存档，存档日期2007-02-05.，2006年日本的编号只有23个<span title="连接到日语网页" style="cursor: default; color: #54595D; font-size: 0.8em; bottom: 0.1em; font-weight: bold;">（日语）</span></span>
+            </p>
+        </li>
+        <li>
+            <p>
+                <span class="mw-cite-backlink" style="user-select: none;"><strong>^</strong></span>&nbsp;<span class="reference-text">泉州台风网，根据中国气象局编成的台风资料<sup class="noprint Inline-Template" style="line-height: 1;">[<span title="自2017年11月失效">失效链接</span>]</sup>，2006年中华人民共和国的编号有24个</span>
+            </p>
+        </li>
+        <li>
+            <p>
+                <span class="mw-cite-backlink" style="user-select: none;"><strong>^</strong></span>&nbsp;<span class="reference-text">香港天文台台风名字中文译名&nbsp;（页面存档备份，存于互联网档案馆）</span>
+            </p>
+        </li>
+        <li>
+            <p>
+                <span class="mw-cite-backlink" style="user-select: none;"><strong>^</strong></span>&nbsp;<span class="reference-text">交通部中央气象局，气象常识—台风&nbsp;互联网档案馆的存档，存档日期2007-08-21.</span>
+            </p>
+        </li>
+        <li>
+            <p>
+                <span class="mw-cite-backlink" style="user-select: none;"><strong>^</strong></span>&nbsp;<span class="reference-text">香港天文台，热带气旋命名比赛结果&nbsp;（页面存档备份，存于互联网档案馆）</span>
+            </p>
+        </li>
+    </ol>
+</div>
+<p>
+    <br/>
+</p>
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6119901489929327"
+     crossorigin="anonymous"></script>
+<!-- NEW UI SKY4K -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-6119901489929327"
+     data-ad-slot="4759064559"
+     data-ad-format="auto"
+     data-full-width-responsive="true"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+</div>
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6119901489929327"
+     crossorigin="anonymous"></script>
+<!-- NEW UI SKY4K -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-6119901489929327"
+     data-ad-slot="4759064559"
+     data-ad-format="auto"
+     data-full-width-responsive="true"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6119901489929327"
+     crossorigin="anonymous"></script>
+<!-- NEW UI SKY4K -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-6119901489929327"
+     data-ad-slot="4759064559"
+     data-ad-format="auto"
+     data-full-width-responsive="true"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6119901489929327"
+     crossorigin="anonymous"></script>
+<!-- NEW UI SKY4K -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-6119901489929327"
+     data-ad-slot="4759064559"
+     data-ad-format="auto"
+     data-full-width-responsive="true"></ins>
+<script>
      (adsbygoogle = window.adsbygoogle || []).push({});
 </script>
 <div class="footer">
